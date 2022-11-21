@@ -31,7 +31,7 @@ function draw() {
   }
   //Bubble Hold to Spawn
   if (keyIsPressed === true && keyCode == 81){
-    let i = random(15)
+    let i = random(18)
     bubbles.push(new Bubble(50 + i * 100, height/2, 20));
   }
 
@@ -57,7 +57,7 @@ function mouseClicked() {
 
 function keyPressed() {
   if (keyCode == 32) {
-    let i = random(15)
+    let i = random(18)
     bubbles.push(new Bubble(50 + i * 100, height/2, 20));
     console.log("Added Bubble " + "New Total: " + bubbles.length + " Bubbles")
   }
