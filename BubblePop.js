@@ -4,6 +4,7 @@ let g = 1
 
 
 function preload() {
+  parrot = loadImage("images/dancingParrot.gif")
   bubblePop = loadSound("sounds/bubblePop.mp3");
 }
 
@@ -21,7 +22,7 @@ function draw() {
   UI();
   millisecond = millis();
   //Auto Bubble Spawner
-  if(millisecond >= 2000*g) {
+  if(millisecond >= 5000*g) {
     let i = random(15)
     g = g + 1
     bubbles.push(new Bubble(50 + i * 100, height/2, 20));
@@ -65,6 +66,13 @@ function keyPressed() {
 function UI() {
   noStroke()
   fill(255, 255, 255)
+  dancingParrot()
   text("Bubbles Count: " + bubbles.length,10, 20)
   text("Controls: \nLeft Click to Pop\nSpacebar: Spawn 1 Bubble\nQ: Spawn Bubbles Fast", 10, 40)
+}
+
+function dancingParrot() {
+  imageMode(CENTER)
+  image(parrot, width - 50, height - 50, 75, 75)
+  text("Made By: @LucasFromDK on Github", width/2, height - 10)
 }
