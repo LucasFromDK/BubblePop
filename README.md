@@ -1,2 +1,2 @@
-# BubblePop
-BubblePop Game
+# Bubble Pop
+# https://lucasfromdk.github.io/BubblePop/
