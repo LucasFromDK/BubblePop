@@ -67,6 +67,7 @@ function UI() {
   noStroke()
   fill(255, 255, 255)
   dancingParrot()
+  textAlign(LEFT)
   text("Bubbles Count: " + bubbles.length,10, 20)
   text("Controls: \nLeft Click to Pop\nSpacebar: Spawn 1 Bubble\nQ: Spawn Bubbles Fast", 10, 40)
 }
