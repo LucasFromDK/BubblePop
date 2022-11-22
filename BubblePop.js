@@ -73,6 +73,7 @@ function UI() {
 
 function dancingParrot() {
   imageMode(CENTER)
+  textAlign(CENTER)
   image(parrot, width - 50, height - 50, 75, 75)
   text("Made By: @LucasFromDK on Github", width/2, height - 10)
 }
