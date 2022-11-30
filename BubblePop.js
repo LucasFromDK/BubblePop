@@ -4,8 +4,8 @@ let g = 1
 
 
 function preload() {
-  parrot = loadImage("images/dancingParrot.gif")
-  bubblePop = loadSound("sounds/bubblePop.mp3");
+  parrot = loadImage("src/images/dancingParrot.gif")
+  bubblePop = loadSound("src/sounds/bubblePop.mp3");
 }
 
 function setup() {
