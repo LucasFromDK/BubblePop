@@ -2,7 +2,6 @@ const bubbles = [];
 let millisecond = 0
 let g = 1
 
-
 function preload() {
   parrot = loadImage("src/images/dancingParrot.gif")
   bubblePop = loadSound("src/sounds/bubblePop.mp3");
