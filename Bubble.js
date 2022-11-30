@@ -30,14 +30,4 @@ class Bubble {
       this.y = this.y - this.r;
     }
   }
-
-  changeColor(color) {
-    this.c = color;
-  }
-
-  intersects(other) {
-    let distance = dist(this.x, this.y, other.x, other.y);
-
-    return distance <= this.r + other.r;
-  }
 }
